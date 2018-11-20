@@ -8,6 +8,7 @@ import FirstPure from './examples/first/Pure.js';
 import FirstMixins from './examples/first/Mixins.js';
 import FirstHighOrder from './examples/first/HighOrder.js';
 import FirstRenderProps from './examples/first/RenderProps.js';
+import FirstHooks from './examples/first/Hooks.js';
 
 const Home = () => <div>Home</div>
 
@@ -27,6 +28,9 @@ const MainMenu = () => (
     </Link>
     <Link to="/1-render-props">
       <button>1-render-props</button>
+    </Link>
+    <Link to="/1-hooks">
+      <button>1-hooks</button>
     </Link>
   </div>
 )
@@ -54,6 +58,7 @@ class App extends Component {
             <Route exact path="/1-mixins" component={FirstMixins} />
             <Route exact path="/1-high-order" component={FirstHighOrder} />
             <Route exact path="/1-render-props" component={FirstRenderProps} />
+            <Route exact path="/1-hooks" component={FirstHooks} />
           </div>
         </div>
       </Router>

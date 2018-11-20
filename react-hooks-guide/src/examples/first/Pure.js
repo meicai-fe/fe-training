@@ -27,6 +27,7 @@ export default class MouseRender extends Component {
 
   render() {
     const { x, y } = this.state;
+
     return (
       <span>
         Mouse X: {x} Mouse Y: {y}
