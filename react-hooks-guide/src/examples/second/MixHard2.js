@@ -13,24 +13,36 @@ function useMousePosition() {
     })
   }
 
-  // 观察console可以看到，useEffect只会调用一次，和我们预期的不符合，因为这里的写法本身有一些小问题
+  // QA: useEffect 如果有多个，怎样安排逻辑，需要按顺序吗
   useEffect(() => {
-    console.log('添加监听');
+    console.log('effect-in');
     window.addEventListener("mousemove", handleMouseMove);
     return () => {
-      console.log('移除监听');
       window.removeEventListener("mousemove", handleMouseMove);
     }
-  }, []);
-  // 同学可以把上面的"[]"去掉，或者替换为"[position]"
-  // []相当于不监听，也就是只执行一次，保证了执行的效果和componentDidmount一样
+  });
+  console.log('state-in');
 
   return position;
 }
 
-// 为了体现出独立性，我分开写，其实这边比较简单，写到原来的函数中也行
 function useCount() {
   const [count, setCount] = useState(0);
+  useEffect(() => {
+    console.log('effect-out');
+    document.title = `You clicked ${count} times`;
+    return () => {
+      document.title = '我走了';
+    }
+  });
+  useEffect(() => {
+    console.log('effect-out-2');
+    // useEffect发生在dom完成后，如果此处再修改相关参数会怎样呢？
+    // setCount(count + 1);
+    return () => {}
+  });
+  console.log('state-out'); // 注意异步
+
   return {
     count, setCount
   }
