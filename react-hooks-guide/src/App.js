@@ -12,8 +12,11 @@ import FirstHighOrder from './examples/first/HighOrder.js';
 import FirstRenderProps from './examples/first/RenderProps.js';
 import FirstHooks from './examples/first/Hooks.js';
 import SecondPure from './examples/second/Pure.js';
+import SecondPure2 from './examples/second/Pure2.js';
+import SecondPure3 from './examples/second/Pure3.js';
 import SecondMix from './examples/second/Mix.js';
 import SecondMixHard from './examples/second/MixHard.js';
+import SecondMixHard2 from './examples/second/MixHard2.js';
 
 const Home = () => <div>Home</div>
 
@@ -46,11 +49,20 @@ const MainMenu = () => (
     <Link to="/2-pure">
       <button>2-pure</button>
     </Link>
+    <Link to="/2-pure-2">
+      <button>2-pure-2</button>
+    </Link>
+    <Link to="/2-pure-3">
+      <button>2-pure-3</button>
+    </Link>
     <Link to="/2-mix">
       <button>2-mix</button>
     </Link>
     <Link to="/2-mix-hard">
       <button>2-mix-hard</button>
+    </Link>
+    <Link to="/2-mix-hard-2">
+      <button>2-mix-hard-2</button>
     </Link>
   </div>
 )
@@ -82,8 +94,11 @@ class App extends Component {
             <Route exact path="/1-render-props" component={FirstRenderProps} />
             <Route exact path="/1-hooks" component={FirstHooks} />
             <Route exact path="/2-pure" component={SecondPure} />
+            <Route exact path="/2-pure-2" component={SecondPure2} />
+            <Route exact path="/2-pure-3" component={SecondPure3} />
             <Route exact path="/2-mix" component={SecondMix} />
             <Route exact path="/2-mix-hard" component={SecondMixHard} />
+            <Route exact path="/2-mix-hard-2" component={SecondMixHard2} />
           </div>
         </div>
       </Router>
