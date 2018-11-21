@@ -4,6 +4,9 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
 
+import ZeroPure from './examples/zero/Pure.js';
+import ZeroOld from './examples/zero/Old.js';
+
 import FirstPure from './examples/first/Pure.js';
 import FirstMixins from './examples/first/Mixins.js';
 import FirstHighOrder from './examples/first/HighOrder.js';
@@ -16,6 +19,12 @@ const MainMenu = () => (
   <div>
     <Link to="/">
       <button>home</button>
+    </Link>
+    <Link to="/0-pure">
+      <button>0-pure</button>
+    </Link>
+    <Link to="/0-old">
+      <button>0-old</button>
     </Link>
     <Link to="/1-pure">
       <button>1-pure</button>
@@ -54,6 +63,8 @@ class App extends Component {
           </header>
           <div>
             <Route exact path="/" component={Home} />
+            <Route exact path="/0-pure" component={ZeroPure} />
+            <Route exact path="/0-old" component={ZeroOld} />
             <Route exact path="/1-pure" component={FirstPure} />
             <Route exact path="/1-mixins" component={FirstMixins} />
             <Route exact path="/1-high-order" component={FirstHighOrder} />
