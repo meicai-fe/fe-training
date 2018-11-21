@@ -17,6 +17,7 @@ import SecondPure3 from './examples/second/Pure3.js';
 import SecondMix from './examples/second/Mix.js';
 import SecondMixHard from './examples/second/MixHard.js';
 import SecondMixHard2 from './examples/second/MixHard2.js';
+import ThirdReducer from './examples/third/Reducer.js';
 
 const Home = () => <div>Home</div>
 
@@ -64,6 +65,9 @@ const MainMenu = () => (
     <Link to="/2-mix-hard-2">
       <button>2-mix-hard-2</button>
     </Link>
+    <Link to="/3-reducer">
+      <button>3-reducer</button>
+    </Link>
   </div>
 )
 
@@ -99,6 +103,7 @@ class App extends Component {
             <Route exact path="/2-mix" component={SecondMix} />
             <Route exact path="/2-mix-hard" component={SecondMixHard} />
             <Route exact path="/2-mix-hard-2" component={SecondMixHard2} />
+            <Route exact path="/3-reducer" component={ThirdReducer} />
           </div>
         </div>
       </Router>
