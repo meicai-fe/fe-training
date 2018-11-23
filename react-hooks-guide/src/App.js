@@ -8,6 +8,7 @@ import ZeroPure from './examples/zero/Pure.js';
 import ZeroOld from './examples/zero/Old.js';
 import FirstPure from './examples/first/Pure.js';
 import FirstMixins from './examples/first/Mixins.js';
+import FirstExtend from './examples/first/Extend.js';
 import FirstHighOrder from './examples/first/HighOrder.js';
 import FirstRenderProps from './examples/first/RenderProps.js';
 import FirstHooks from './examples/first/Hooks.js';
@@ -34,6 +35,9 @@ const MainMenu = () => (
     </Link>
     <Link to="/1-pure">
       <button>1-pure</button>
+    </Link>
+    <Link to="/1-extend">
+      <button>1-extend</button>
     </Link>
     <Link to="/1-mixins">
       <button>1-mixins</button>
@@ -93,6 +97,7 @@ class App extends Component {
             <Route exact path="/0-pure" component={ZeroPure} />
             <Route exact path="/0-old" component={ZeroOld} />
             <Route exact path="/1-pure" component={FirstPure} />
+            <Route exact path="/1-extend" component={FirstExtend} />
             <Route exact path="/1-mixins" component={FirstMixins} />
             <Route exact path="/1-high-order" component={FirstHighOrder} />
             <Route exact path="/1-render-props" component={FirstRenderProps} />

@@ -38,6 +38,7 @@ const withMousePosition = ComponentToWrap => {
 class MouseRender extends Component {
   render() {
     const { x, y } = this.props;
+
     return (
       <span>
         Mouse X: {x} Mouse Y: {y}
