@@ -50,12 +50,12 @@ export default function Example() {
   console.log('re-render-out');
 
   return (
-    <div>
+    <>
       <MouseRender />
       <p>clicked {count.count} times</p>
       <button onClick={() => count.setCount(count.count + 1)}>
         Click me
       </button>
-    </div>
+    </>
   )
 }

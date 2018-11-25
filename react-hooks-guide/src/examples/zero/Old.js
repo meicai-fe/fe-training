@@ -20,12 +20,12 @@ export default class Example extends Component {
     const { count } = this.state;
 
     return (
-      <div>
+      <>
         <p>clicked {count} times</p>
         <button onClick={this.clickBtn}>
           Click me
         </button>
-      </div>
+      </>
     )
   }
 }

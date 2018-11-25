@@ -39,12 +39,12 @@ export default function MouseRender() {
   console.log('re-render');
 
   return (
-    <div>
+    <>
       <p>Mouse X: {mouse.x} Mouse Y: {mouse.y}</p>
       <p>clicked {count.count} times</p>
       <button onClick={() => count.setCount(count.count + 1)}>
         Click me
       </button>
-    </div>
+    </>
   )
 }

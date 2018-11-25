@@ -12,6 +12,7 @@ import FirstExtend from './examples/first/Extend.js';
 import FirstHighOrder from './examples/first/HighOrder.js';
 import FirstRenderProps from './examples/first/RenderProps.js';
 import FirstHooks from './examples/first/Hooks.js';
+import SecondOld from './examples/second/Old.js';
 import SecondPure from './examples/second/Pure.js';
 import SecondPure2 from './examples/second/Pure2.js';
 import SecondPure3 from './examples/second/Pure3.js';
@@ -50,6 +51,9 @@ const MainMenu = () => (
     </Link>
     <Link to="/1-hooks">
       <button>1-hooks</button>
+    </Link>
+    <Link to="/2-old">
+      <button>2-old</button>
     </Link>
     <Link to="/2-pure">
       <button>2-pure</button>
@@ -102,6 +106,7 @@ class App extends Component {
             <Route exact path="/1-high-order" component={FirstHighOrder} />
             <Route exact path="/1-render-props" component={FirstRenderProps} />
             <Route exact path="/1-hooks" component={FirstHooks} />
+            <Route exact path="/2-old" component={SecondOld} />
             <Route exact path="/2-pure" component={SecondPure} />
             <Route exact path="/2-pure-2" component={SecondPure2} />
             <Route exact path="/2-pure-3" component={SecondPure3} />
