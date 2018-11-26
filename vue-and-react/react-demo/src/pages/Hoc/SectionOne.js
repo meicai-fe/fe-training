@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import withHeader from './withHeader'
 
-// @withHeader 装饰器写法
+// @withHeader  // 装饰器写法
 class Section extends Component {
 
   state = {

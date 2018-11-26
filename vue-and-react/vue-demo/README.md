@@ -1,29 +1,13 @@
 # vue-demo
 
-## Project setup
-```
-npm install
-```
+## 包含的案例：
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+### HelloWorld：涵盖基本的开发需求
 
-### Compiles and minifies for production
-```
-npm run build
-```
+### PropsEvent：父子间通信
 
-### Run your tests
-```
-npm run test
-```
+### Inject：使用Provide、Inject实现跨组件通信
 
-### Lints and fixes files
-```
-npm run lint
-```
+### Slot：组件嵌套
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Todo：使用状态管理

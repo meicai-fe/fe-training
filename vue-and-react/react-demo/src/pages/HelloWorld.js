@@ -11,19 +11,13 @@ export default class HelloWorld extends Component {
 
   setTitle = (e) => {
     this.setState({ title: e.target.value })
-  }
+  };
 
   submit = (e) => {
     const { title, list } = this.state;
     list.push({ title });
     this.setState({ list, title: '' });
-  }
-
-  add = (msg) => {
-    const { msgs } = this.state;
-    msgs.push(msg);
-    this.setState({ msgs });
-  }
+  };
 
   render() {
     const { title, list } = this.state;

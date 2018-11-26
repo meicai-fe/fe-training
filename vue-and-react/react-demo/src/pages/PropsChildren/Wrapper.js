@@ -21,4 +21,14 @@ export default class Wrapper extends Component {
 //   </section>
 // )
 //
+// const Wrapper = function (props) {
+//   return (
+//     <section>
+//       <header>我是Wrapper头部</header>
+//       { props.children }
+//       <footer>我是Wrapper尾部</footer>
+//     </section>
+//   )
+// }
+//
 // export default Wrapper
