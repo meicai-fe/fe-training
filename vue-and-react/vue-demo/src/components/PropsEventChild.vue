@@ -2,15 +2,11 @@
   <div class="child">
     <input v-model="content" placeholder="请输入" />
     <button @click="submit">提交</button>
-    <!-- <descendant></descendant> -->
   </div>
 </template>
 
 <script>
-// import Descendant from './Descendant'
 export default {
-  // components: { Descendant },
-
   props: ['last'],
 
   data () {

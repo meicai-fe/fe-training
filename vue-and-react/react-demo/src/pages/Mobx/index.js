@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { inject, observer } from "mobx-react";
 
+// @inject('global')
+// @observer
 class MobxDemo extends Component {
 
   componentDidMount () {
